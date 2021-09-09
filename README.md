@@ -4,7 +4,7 @@ Repo for the EMNLP 2021 paper "Style Pooling: An Empirical Study of Automatic Te
 
 Link for pretrained models and data:[https://zenodo.org/record/4768489#](https://zenodo.org/record/4768489#)
 
-When you download the models-data compressed folder, extract it. Place the content of the data folder, in the data folder in the code provided (uploaded as supplementary material), and place the models in corresponding model folder. 
+When you download the models-data compressed folder, extract it. Place the content of the data folder, in the data folder in the code provided (uploaded as supplementary material), and place the models in corresponding model folder. This code is built upon the code  [https://github.com/cindyxinyiwang/deep-latent-sequence-model](https://github.com/cindyxinyiwang/deep-latent-sequence-model)
 
 The instructions provided here can be used for all the tasks/datasets in the paper.  We make the examples with 3 domains. 
 
@@ -73,3 +73,7 @@ To get the  metrics for a given checkpoint at a given step, you can use the ipyt
 # The GPT-2 Model for evaluation
 
 We use the following instantiation of the GPT-2 model for our evolutions, and use  their scripts to get scores. Please clone this repo next to where you extract our code: [https://github.com/priya-dwivedi/Deep-Learning/tree/master/GPT2-HarryPotter-Training](https://github.com/priya-dwivedi/Deep-Learning/tree/master/GPT2-HarryPotter-Training)
+
+
+
+# Citation
