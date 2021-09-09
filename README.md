@@ -16,11 +16,15 @@ You can find a list of dependencies in dependencies.txt
 
 We have provided the preprocessing code used + the preprocessed data (after running the code) in the above anonymized link. If you want to preprocess the data yourself, in the data folder run:
 
+```
 python [preprocess.py](http://preprocess.py/)
+```
 
 then, in the root directory run:
 
+```
 bash data/blogs_3dom_cleaned/process.sh
+```
 
 You can skip this step and just use our preprocessed data. 
 
@@ -28,6 +32,7 @@ You can skip this step and just use our preprocessed data.
 
 Once you have all the data extracted you can train the LMs for the priors. The LM training scripts are in the scripts forlder. You should run them from the root directory of the code. Here is how you call them:
 
+```
 bash scripts/train_lm_blogs.sh blogs_3dom_cleaned 0 2
 
 bash scripts/train_lm_blogs.sh blogs_3dom_cleaned 1 2
@@ -35,6 +40,7 @@ bash scripts/train_lm_blogs.sh blogs_3dom_cleaned 1 2
 bash scripts/train_lm_blogs.sh blogs_3dom_cleaned 2 2
 
 bash scripts/train_lm_blogs.sh blogs_3dom_cleaned 3 2
+```
 
 Which trains 4 language models, one for each of the three domains, and a last one for the "one-lm" setup. We have also provided our LMs in the link on top of the page. you can download and place them in the pretrained_lm directory instead of training your own. 
 
@@ -42,7 +48,9 @@ Which trains 4 language models, one for each of the three domains, and a last on
 
 You can train the attribute classifiers similar to the Language Models:
 
+```
 bash scripts/train_classifier_blogs_3dom_cleaned.sh
+```
 
 Alternatively, you can use the classifiers we have provided. 
 
@@ -50,20 +58,21 @@ Alternatively, you can use the classifiers we have provided.
 
 In the scripts folder for each dataset, you can find corresponding training scripts. You can run them from the root directory of the code. You can modify all the flags so that you can train models with or without de-boosting, with or without length control and so on. We have provided the scripts used to train our models. The logs and checkpoints will be saved in a "outputs_X" folder, where X is the name of the dataset. The file name includes the hypeparameters and the date of training. Here is how you train a sample model, without deboosting:
 
+```
 bash scripts/blogs_3dom_cleaned/train_blogs_3dom_boost.sh
-
+```
 with deboosting:
-
+```
 bash scripts/blogs_3dom_cleaned/train_blogs_3dom_boost.sh
-
+```
 one-lm baseline:
-
+```
 bash scripts/blogs_3dom_cleaned/train_blogs_3dom_onelm.sh
-
+```
 union:
-
+```
 bash scripts/blogs_3dom_cleaned/train_blogs_3dom_union.sh
-
+```
 You can find our models in the provided link. You just download them and extract them to the corresponding folders. The datasets/scripts with "industry" in their names are for the occupation classification experiment, relating to the fairness setup. 
 
 # Evaluations and Reported Metrics
@@ -77,3 +86,12 @@ We use the following instantiation of the GPT-2 model for our evolutions, and us
 
 
 # Citation
+```
+@inproceedings{mireshghallah-style-pooling,
+  title={Style Pooling: An Empirical Study of Automatic Text Style Obfuscation},
+  author={Mireshghallah, Fatemehsadat and Berg-Kirkpatrick, Taylor},
+  booktitle={Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+  year={2021},
+  month={November}
+}
+```
