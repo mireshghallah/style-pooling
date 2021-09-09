@@ -17,7 +17,7 @@ You can find a list of dependencies in dependencies.txt
 We have provided the preprocessing code used + the preprocessed data (after running the code) in the above anonymized link. If you want to preprocess the data yourself, in the data folder run:
 
 ```
-python [preprocess.py](http://preprocess.py/)
+python preprocess.py
 ```
 
 then, in the root directory run:
