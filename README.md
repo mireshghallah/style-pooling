@@ -1,6 +1,6 @@
 
 # Style Pooling
-Repo for the EMNLP 2021 paper "Style Pooling: An Empirical Study of Automatic Text Style Obfuscation"
+Repo for the EMNLP 2021 paper "Style Pooling: Automatic Text Style Obfuscation for Improved Classification Fairness"
 
 Link for pretrained models and data:[https://zenodo.org/record/4768489#](https://zenodo.org/record/4768489#)
 
