@@ -2,7 +2,7 @@
 # Style Pooling
 Repo for the EMNLP 2021 paper ["Style Pooling: Automatic Text Style Obfuscation for Improved Classification Fairness"](https://aclanthology.org/2021.emnlp-main.152/)
 
-Link for pretrained models and data:[https://zenodo.org/record/4768489#](https://zenodo.org/record/4768489#)
+Link for pretrained models and data:[https://zenodo.org/record/4768489#](https://zenodo.org/record/4768489#), processed data for 3 domain tasks available [here](https://drive.google.com/file/d/1eil16wK9tCmNOQuBtZQIn3k2fDFnoYZR/view?usp=drive_web)
 
 When you download the models-data compressed folder, extract it. Place the content of the data folder, in the data folder in the code provided (uploaded as supplementary material), and place the models in corresponding model folder. This code is built upon the code  [https://github.com/cindyxinyiwang/deep-latent-sequence-model](https://github.com/cindyxinyiwang/deep-latent-sequence-model)
 
